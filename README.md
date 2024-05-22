@@ -1,4 +1,4 @@
-This is a web devleopment project for Ca4 done by
+This is a web development project for Ca4 done by
 <br>
 <br>
 1.Tandin Gyeltshen Lepcha (12230089)
