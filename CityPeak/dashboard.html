@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Peak Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            height: 100vh;
+            color: #333;
+        }
+        .sidebar {
+            width: 200px;
+            background: #FF6700;
+            padding: 20px;
+            height: 100vh;
+            position: fixed;
+            border-right: #fff solid 1px;
+            left: 0; /* Move sidebar to the left */
+        }
+
+        .sidebar .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+
+        .sidebar nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar nav ul li {
+            margin-bottom: 10px;
+        }
+
+        .sidebar nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            display: block;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .sidebar nav ul li a:hover {
+            background: #ffffff;
+            color: #FF6700;}
+
+        .main-content {
+            flex-grow: 1;
+            padding-left: 250px; 
+            background-color: #f9f9f9;
+            box-sizing: border-box;
+        }
+        .main-content h1 {
+            margin-top: 0;
+        }
+        .stats-container {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .stats-container .stat {
+            background-color: #ff6700;
+            padding: 20px;
+            text-align: center;
+            border-radius: 5px;
+            flex-grow: 1;
+            margin: 0 10px;
+            color: white;
+        }
+        .stats-container .stat img {
+            display: block;
+            margin: 0 auto 10px auto;
+        }
+        .charts-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .charts-container .chart {
+            background-color: #ff6700;
+            flex-grow: 1;
+            margin: 0 10px;
+            padding: 20px;
+            border-radius: 5px;
+            color: white;
+        }
+        .chart img {
+            width: 100%;
+            height: auto;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">CITY PEAK</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="">Dashboard</a></li>
+                <li><a href="Register.html">Register</a></li>
+                <li><a href="Login.html">Login</a></li>
+                <li><a href="Contactus.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="main-content">
+        <h1>Dashboard</h1>
+        <div class="stats-container">
+            <div class="stat">
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/tap.png" alt="Clicks Icon">
+                <p>500,000<br>Clicks</p>
+            </div>
+            <div class="stat">
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/clock.png" alt="Hours Icon">
+                <p>20,000<br>Hours Spent</p>
+            </div>
+            <div class="stat">
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/star.png" alt="Rating Icon">
+                <p>4.5<br>Rating</p>
+            </div>
+        </div>
+        <div class="charts-container">
+            <div class="chart">
+                <img src="img/graph_up.gif" alt="Graph">
+            </div>
+            <div class="chart">
+                <img src="img/tumblr_np16n9aE2c1rxzliio1_1280.gif" alt="Mood Chart">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

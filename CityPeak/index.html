@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Peak Admin Dashboard</title>
+    <style>
+        html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #FF6700;
+    color: #fff;
+    box-sizing: border-box;
+}
+
+.admin-dashboard {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 200px;
+    background: #FF6700;
+    padding: 20px;
+    height: 100vh;
+    position: fixed;
+    border-right: #fff solid 1px;
+}
+
+.sidebar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.sidebar nav ul li a:hover {
+    background: #ffffff;
+    color: #FF6700;
+}
+
+.main-content {
+    margin-left: 220px;
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    margin: 0;
+    padding: 0;
+    background-color: #FF6700;
+    border-bottom: #fff solid 5px;
+    display: flex; 
+    align-items: center; 
+}
+
+header h1 {
+    flex: 1; 
+    text-align: center;
+    font-size: 32px;
+    text-decoration: white 3px;
+    margin: 0;
+    padding: 20px 0;
+    line-height: 1;
+}
+
+.pfp {
+    display: inline-block;
+    border: #ffffff solid 2px;
+    border-radius: 50%;
+    margin-right: 10px; 
+}
+
+.pfp img{
+    border-radius: 100%;
+    float: right;
+    align-self: center;
+    width:50px;
+    height:50px;
+    
+}
+
+.hero {
+    margin: 20px 0;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    max-height: 400px;
+    padding-left: 6px;
+}
+
+.trending-games {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    flex: 1;
+    width: auto;
+    height: auto;
+    border-bottom: #fff solid 5px;
+}
+
+.trending-games .game {
+    text-align: center;
+    margin: 10px;
+    flex: 1;
+}
+
+.trending-games .game h2 {
+    margin-bottom: 10px;
+}
+
+.trending-games .game img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+footer {
+    background: #FF6700;
+    padding: 20px;
+    text-align: center;
+    margin-top: auto;
+}
+
+footer .social-media a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+footer .social-media img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.footer-logo img {
+    width: 100px;
+    margin-top: 20px;
+}
+
+.footer-links {
+    margin: 20px 0;
+}
+
+.footer-links a {
+    display: inline-block;
+    margin: 10px 0;
+    text-decoration: none;
+    color: #fff;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.footer-copy {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-size: 14px;
+}
+
+@media only screen and (max-width: 768px) {
+            .admin-dashboard {
+                flex-direction: column;
+                
+            }
+            .main-content {
+                margin-left: 0;
+            }
+            .sidebar {
+                position: static;
+                width: 200px;
+                padding: 10px;
+                border-right: none;
+            }
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+            header h1 {
+                padding: 20px 0;
+            }
+            .pfp {
+                display: none;
+            }
+            .hero img {
+                max-height: 300px;
+            }
+            .trending-games {
+                flex-direction: column;
+                align-items: center;
+            }
+            .game {
+                width: 100%;
+                margin: 10px 0;
+            }
+            .sidebar nav ul li a {
+                display: inline-block;
+                margin: 10px 0;
+                text-decoration: none;
+                color: #fff;
+                padding-left: 10px;
+                padding-right: 10px;
+}
+        }
+
+    </style>
+</head>
+<body>
+    <div class="admin-dashboard">
+        <div class="sidebar">
+            <div class="logo">CITY PEAK</div>
+            <nav>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="Register.html">Register</a></li>
+                    <li><a href="Login.html">Login</a></li>
+                    <li><a href="Contactus.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="main-content">
+            <header>
+                <h1>Welcome to City Peak.</h1>
+                <div class="pfp">
+                    <a href="profile.html">
+                        <img src="img/R (1).png" alt="Profile Picture">
+                    </a>
+                </div>
+            </header>
+            <section class="hero">
+                <img src="img/City.png" alt="City Peak">
+            </section>
+            <section class="trending-games">
+                <div class="game">
+                    <h2>City Peak</h2>
+                    <img src="img/Game.png" alt="City Peak">
+                </div>
+                <div class="game large">
+                    <h2>PlagueFall</h2>
+                    <img src="img/Plaguefall.png" alt="PlagueFall">
+                </div>
+            </section>
+            <footer>
+                <div class="social-media">
+                    <a><img src="img/Twitter.png" alt="Twitter"></a>
+                    <a><img src="img/Facebook.png" alt="Facebook"></a>
+                    <a><img src="img/Instagram.png" alt="Instagram"></a>
+                    <a><img src="img/Youtube.png" alt="YouTube"></a>
+                    <a><img src="img/Tiktok.png" alt="TikTok"></a>
+                    <a><img src="img/Discord.png" alt="Discord"></a>
+                    <a"><img src="img/Reddit.png" alt="Reddit"></a>
+                </div>
+                <div class="footer-logo">
+                    <img src="img/Logo.png" alt="City Peak Logo">
+                </div>
+                <div class="footer-links">
+                    <a>Sign Up for News</a>
+                    <a>Contact Us</a>
+                    <a>Help & Support Services</a>
+                    <a>Careers</a>
+                    <a>Media Inquiries</a>
+                    <a>Terms of Use</a>
+                    <a>Privacy Policy</a>
+                    <a>Internet-Based Ads</a>
+                </div>
+                <div class="footer-copy">
+                    &copy; 2024 City Peak and related entities. All Rights Reserved.
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

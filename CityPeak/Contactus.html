@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Peak - Contact Us</title>
+    <style>
+        body, h1, h2, p, ul, li, a, input, textarea, button {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            width: 100%;
+        }
+
+        .sidebar {
+    width: 200px;
+    background: #FF6700;
+    padding: 20px;
+    height: 100vh;
+    position: fixed;
+    border-right: #fff solid 1px;
+}
+
+.sidebar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.sidebar nav ul li a:hover {
+    background: #ffffff;
+    color: #FF6700;
+}
+        main {
+            flex: 1;
+            margin-left: 200px; 
+            padding-left: 50px;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            
+        }
+
+        .contact-form {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 100%;
+        }
+
+        .contact-form h1 {
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .contact-form .form-group {
+            margin-bottom: 1rem;
+        }
+
+        .contact-form .form-group input,
+        .contact-form .form-group textarea {
+            width: calc(100% - 2rem);
+            padding: 0.5rem;
+            border: 2px solid #ffa500;
+            border-radius: 4px;
+            margin: 0 1rem 1rem 0;
+        }
+
+        .contact-form .form-group input:last-child {
+            margin-right: 0;
+        }
+
+        .contact-form button {
+            background-color: #ffa500;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #e69500;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .sidebar {
+                position: static;
+                width: 100%;
+                height: auto;
+                flex-direction: row;
+                justify-content: space-around;
+            }
+
+            .sidebar .profile {
+                flex-direction: row;
+                margin-bottom: 0;
+            }
+
+            .sidebar .nav-links {
+                display: flex;
+                justify-content: space-around;
+                width: 100%;
+            }
+
+            main {
+                margin-left: 0;
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="logo">CITY PEAK</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="Register.html">Register</a></li>
+                    <li><a href="Login.html">Login</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <main>
+            <section class="contact-form">
+                <h1>Get in touch</h1>
+                <form>
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Name" required>
+                        <input type="email" name="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" rows="6" placeholder="Message" required></textarea>
+                    </div>
+                    <button type="submit">Send Message</button>
+                </form>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
